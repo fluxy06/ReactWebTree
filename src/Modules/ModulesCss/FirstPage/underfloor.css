@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+#info-1 {
+    color: black;
+}
+
+#baseText {
+    font-family: "Crimson Pro", sans-serif;
+    font-size: 13px;
+    transition: 0.5s ease;
+}
+
+#baseText:hover {
+    font-family: "Crimson Pro", sans-serif;
+    font-size: 14px;
+    color: green;
+    transition: 0.5s ease;
+}
+
+#base {
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#base-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 960px;
+    height: 93px;
+    background-color: #cefad171;
+}

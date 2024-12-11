@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+#head-text {
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 32px;
+  font-style: inherit;
+  width: 552px;
+  transition: 0.5s ease;
+}
+#head-text:hover {
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 33px;
+  font-style: inherit;
+  width: 580px;
+  transition: 0.5s ease;
+  color: rgba(11, 167, 6, 0.979);
+}
+#pre-text {
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 20px;
+  width: 482px;
+  transition: 0.5s ease;
+}
+#pre-text:hover {
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 21px;
+  width: 520px;
+  transition: 0.5s ease;
+  color: rgba(11, 167, 6, 0.979);
+}
+#cont-mid {
+  margin-top: 40px;
+  display: grid;
+  justify-content: center;
+}
+#mid {
+  width: 960px;
+  height: 560px;
+  background-image: url('../../../assets/InfoBox.png');
+  background-size: cover;
+}
+.text {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#startLearn {
+  width: 300px;
+  height: 40px;
+  background-color: #61df61b7;
+  border: 0px;
+  border-radius: 4px;
+  transition: 0.5s ease;
+  font-size: 15px;
+  margin-left: 50px;
+}
+#startLearn:hover {
+  width: 320px;
+  height: 40px;
+  background-color: rgba(11, 167, 6, 0.788);
+  color: white;
+  font-size: 18px;
+  border: 0px;
+  border-radius: 4px;
+  transition: 0.5s ease;
+}
