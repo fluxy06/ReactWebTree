@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../../ModulesCss/FirstPage/midle.css';
 import InfoBox from '../../../assets/Logo.png';
+import CreateRegistrForm from '../../../Modules/Models/ModuleAuth/RegistrForm.jsx'
 
 function PreText({ text, secondary }) {
   return (
@@ -12,6 +13,15 @@ function PreText({ text, secondary }) {
 }
 
 function Midle() {
+  const [showRegForm, setShowRegForm] = useState(false);
+
+  const OnRegCLick = () => {
+    setShowRegForm(true);
+  }
+
+  const CloseReg = () => {
+    setShowRegForm(false);
+  }
   return (
     <div id="cont-mid">
       <div id="mid">
@@ -22,10 +32,12 @@ function Midle() {
           />
           </div>
           <div id='form-group'>
-            <button id='startLearn'>Начать обучение </button>
+            <button id='startLearn' onClick={OnRegCLick}>Начать обучение </button>
           </div>
       </div>
+      {showRegForm && <CreateRegistrForm isOpen={showRegForm} onClose={CloseReg} />}
     </div>
+    
   );
 }
 

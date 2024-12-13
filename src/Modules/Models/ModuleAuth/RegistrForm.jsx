@@ -1,35 +1,35 @@
 import { useRef, useState } from 'react';
-import '../../ModulesCss/ModuleAuth/LoginForm.css';
+import '../../ModulesCss/ModuleAuth/RegistrForm.css';
 
-function CreateLoginForm({ onClose, isOpen }) {
-  const loginRef = useRef(null); // Реф для поля логина
-  const passwordRef = useRef(null); // Реф для поля пароля
+function CreateRegistrForm({ onClose, isOpen }) {
   const [showPassword, setShowPassword] = useState(false); // Состояние для показа пароля
 
+  const Log = useRef(null); // Реф для логина
+  const Pass = useRef(null); // Реф для пароля
+  const DoublePass = useRef(null); // Реф для повторного пароля
+
   // Обработчик изменения состояния checkbox
-  const ChangeVisible = () => {
-    setShowPassword((visible) => !visible); // Инвертируем состояние
+  const handleCheckboxChange = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword); // Инвертируем состояние
   };
 
-  // Обработчик нажатия кнопки "Войти"
   const SignIn = () => {
-    const loginValue = loginRef.current.value; // Значение логина
-    const passwordValue = passwordRef.current.value; // Значение пароля
+    const loginValue = Log.current.value; // Значение логина
+    const passwordValue = Pass.current.value; // Значение пароля
+    const repeatPasswordValue = DoublePass.current.value; // Значение повторного пароля
 
-    // Проверка длины логина
     if (loginValue.length < 3) {
       alert("Короткий логин!");
       return;
-    }
-
-    // Проверка длины пароля
-    if (passwordValue.length < 5) {
+    } else if (passwordValue.length < 5) {
       alert("Короткий пароль!");
       return;
+    } else if (repeatPasswordValue !== passwordValue) {
+      alert("Пароли не совпадают!");
+      return;
+    } else {
+      alert("Регистрация успешна!");
     }
-
-    // Если все проверки пройдены
-    alert("Вход выполнен!");
   };
 
   return (
@@ -39,30 +39,31 @@ function CreateLoginForm({ onClose, isOpen }) {
         <h1 id='WelcomeText'>Добро пожаловать</h1>
         <form action="#">
           <div id='input-objects'>
-            <input
-              type="text"
-              placeholder='Введите логин'
-              id="Login"
-              ref={loginRef} // Привязываем реф к полю логина
-            />
+            <input type="text" placeholder='Введите логин' id="Login" ref={Log} />
             <input
               type={showPassword ? 'text' : 'password'} // Изменяем тип поля ввода
               placeholder='Введите пароль'
               id="Password"
-              ref={passwordRef} // Привязываем реф к полю пароля
+              ref={Pass}
+            />
+            <input
+              type={showPassword ? 'text' : 'password'} // Изменяем тип поля ввода
+              placeholder='Повторите пароль'
+              id='RepeatPassword'
+              ref={DoublePass}
             />
             <div className="hide-pass">
               <input
                 type="checkbox"
                 id="HidePass"
                 checked={showPassword} // Устанавливаем состояние checkbox
-                onChange={ChangeVisible} // Обработчик изменения
+                onChange={handleCheckboxChange} // Обработчик изменения
               />
               <p id='CheckText'>Показать пароль</p>
             </div>
           </div>
           <div id='button-objects'>
-            <button id='INT' onClick={SignIn}>Войти</button>
+            <button id='INT' onClick={SignIn}>Зарегистрироваться</button>
             <p id='RegistrBut' onClick={() => alert("Щас зарегаемся, не кипишуй")}>
               Нет учетной записи? Жми сюда
             </p>
@@ -73,4 +74,4 @@ function CreateLoginForm({ onClose, isOpen }) {
   );
 }
 
-export default CreateLoginForm;
+export default CreateRegistrForm;
