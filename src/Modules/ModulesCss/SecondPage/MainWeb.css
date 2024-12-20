@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: "Crimson Pro", sans-serif;
+}
+
+#mid-box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.cont {
+    display: grid;
+
+    width: 960px;
+    height: 560px;
+    background-color:#cefad171;;
+}
+
+.block1 {
+    display: flex;
+    padding: 20px;
+    width: 805px;
+    height: 90px;
+}
+
+.block2 {
+    margin-left: 15px;
+    display: flex;
+    width: 805px;
+    height: 90px;
+}
+
+.block3 {
+    display: flex;
+    width: 805px;
+    height: 90px;
+    padding: 20px;
+}
+
+#javaLogo {
+    width: 83px;
+    height: 83px;
+    margin-right: 15px;
+    transition: 0.3s ease;
+}
+
+#javaLogo:hover {
+    width: 75px;
+    height: 75px;
+    transition: 0.3s ease;
+}
+
+#JavaId {
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+#javaText {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+#but1 {
+    width: 435px;
+    height: 26px;
+    background-color: #A8E2B0;
+    border: 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+
+#but1:hover {
+    background-color: rgba(24, 247, 24, 0.726);
+    color: rgb(37, 5, 124);
+    font-size: 16px;
+    width: 400px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+#pythonLogo {
+    width: 83px;
+    height: 83px;
+    transition: 0.5s ease;
+    margin-right: 15px;
+}
+
+#pythonLogo:hover {
+    width: 75px;
+    height: 75px;
+    transition: 0.5s ease;
+}
+
+#PythonID {
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+#PythonText {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+#but2 {
+    width: 435px;
+    height: 26px;
+    background-color: #A8E2B0;
+    border: 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+#but2:hover {
+    background-color: rgba(24, 247, 24, 0.726);
+    color: rgb(37, 5, 124);
+    font-size: 16px;
+    width: 400px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+#cLogo {
+    width: 83px;
+    height: 83px;
+    transition: 0.5s ease;
+}
+
+#cLogo:hover {
+    width: 75px;
+    height: 75px;
+    transition: 0.5s ease;
+}
+
+#CID {
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+#CText {
+    font-family: sans-serif;
+}
+
+#but3 {
+    width: 435px;
+    height: 26px;
+    background-color: #A8E2B0;
+    border: 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+
+#but3:hover {
+    background-color: rgba(24, 247, 24, 0.726);
+    color: rgb(37, 5, 124);
+    font-size: 16px;
+    width: 400px;
+    transition: 1s ease;
+    cursor: pointer;
+}

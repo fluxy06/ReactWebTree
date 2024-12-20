@@ -35,7 +35,7 @@ function Header() {
             </div>
             <div className="buttons" id='buttons'>
               <button id='sign' onClick={OnRegCLick}>Зарегистрироваться</button>
-              <button id='input' onClick={OnClickINT}>Войти</button> {/* Убрали скобки */}
+              <button id='input' onClick={OnClickINT}>Войти</button>
             </div>
           </div>
         </div>

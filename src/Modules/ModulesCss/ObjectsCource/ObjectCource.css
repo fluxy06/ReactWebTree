@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: "Crimson Pro", sans-serif;
+}
+
+#titl1 {
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+#imgJava {
+    height: 83px;
+    width: 83px;
+    transition: 0.3s ease;
+}
+
+#imgJava:hover {
+    height: 80px;
+    width: 80px;
+    transition: 0.3s ease;
+}
+
+#FirstButton {
+    background-color: #A8E2B0;
+    width: 435px;
+    height: 26px;
+    border-radius: 4px;
+    border: 0px;
+    transition: 0.5s ease;
+}
+#FirstButton:hover {
+    background-color: #1de738;
+    width: 430px;
+    height: 24px;
+    border-radius: 4px;
+    border: 0px;
+    transition: 0.5s ease;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 12px;
+}

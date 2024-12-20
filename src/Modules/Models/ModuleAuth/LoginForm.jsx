@@ -1,10 +1,12 @@
 import { useRef, useState } from 'react';
 import '../../ModulesCss/ModuleAuth/LoginForm.css';
+import { useNavigate } from 'react-router-dom'; 
 
 function CreateLoginForm({ onClose, isOpen }) {
   const loginRef = useRef(null); // Реф для поля логина
   const passwordRef = useRef(null); // Реф для поля пароля
   const [showPassword, setShowPassword] = useState(false); // Состояние для показа пароля
+  const navigate = useNavigate(); // Инициализация useNavigate
 
   // Обработчик изменения состояния checkbox
   const ChangeVisible = () => {
@@ -12,7 +14,9 @@ function CreateLoginForm({ onClose, isOpen }) {
   };
 
   // Обработчик нажатия кнопки "Войти"
-  const SignIn = () => {
+  const SignIn = (e) => {
+    e.preventDefault(); // Предотвращаем стандартное поведение формы
+
     const loginValue = loginRef.current.value; // Значение логина
     const passwordValue = passwordRef.current.value; // Значение пароля
 
@@ -30,6 +34,7 @@ function CreateLoginForm({ onClose, isOpen }) {
 
     // Если все проверки пройдены
     alert("Вход выполнен!");
+    navigate('/load-web'); // Переход на страницу с LoadWeb
   };
 
   return (

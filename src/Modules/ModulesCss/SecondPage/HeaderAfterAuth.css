@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+.main-box {
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: "Crimson Pro", sans-serif;
+}
+
+.head {
+    height: 93px;
+    width: 860px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cefad171;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#LogoWebPlatform {
+    width: 71px;
+    height: 53px;
+    margin-right: ;
+}
+
+#Find {
+    width: 375px;
+    height: 32px;
+    background-color: #BFFFD9;
+    border: 0px;
+    border-radius: 4px;
+    opacity: 50%;
+    font-size: 15px;
+    margin-right: 15px;
+    transition: 1s ease;
+}
+
+#Find:focus {
+    background-color: #5bec6e;
+    width: 400px;
+    color: black;
+    font-size: 17px;
+    opacity: 70%;
+    transition: 1s ease;
+}
+
+#ButtonFind {
+    width: 104px;
+    height: 33px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: #A8E2B0;
+    transition: 1s ease;
+    margin-right: 15px;
+    transition: 0.5s ease;
+}
+
+#ButtonFind:hover {
+    width: 124px;
+    background-color: rgba(97, 235, 97, 0.726);
+    transition: 0.5s ease;
+}
+
+#ButtonPersonality {
+    width: 198px;
+    height: 33px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: #A8E2B0;
+    transition: 0.5s ease;
+}
+
+#ButtonPersonality:hover {
+    width: 218px;
+    background-color: rgba(97, 235, 97, 0.726);
+    transition: 0.5s ease;
+}

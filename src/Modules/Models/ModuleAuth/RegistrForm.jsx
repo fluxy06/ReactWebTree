@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import '../../ModulesCss/ModuleAuth/RegistrForm.css';
+import { useNavigate } from 'react-router-dom'; 
 
 function CreateRegistrForm({ onClose, isOpen }) {
   const [showPassword, setShowPassword] = useState(false); // Состояние для показа пароля
@@ -65,7 +66,7 @@ function CreateRegistrForm({ onClose, isOpen }) {
           <div id='button-objects'>
             <button id='INT' onClick={SignIn}>Зарегистрироваться</button>
             <p id='RegistrBut' onClick={() => alert("Щас зарегаемся, не кипишуй")}>
-              Нет учетной записи? Жми сюда
+              Уже зарегистрировался? Жми сюда!
             </p>
           </div>
         </form>
